@@ -1,11 +1,10 @@
 <template>
   <v-container align="start">
-    <p>{{ social_links }}</p>
 
     <v-row class="text-center">
       <v-col class="mb-3" cols="1" align="center">
         <img
-          src="https://avatars.dicebear.com/api/miniavs/luis%20antonio.svg"
+          src="https://avatars.dicebear.com/api/croodles-neutral/luisgomesbcc%40gmail.com.svg"
           width="200"
           height="200"
         />
