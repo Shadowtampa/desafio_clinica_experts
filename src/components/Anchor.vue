@@ -1,10 +1,10 @@
 <template>
 <p>Im an Anchor</p>
-  <!-- <v-col class="mb-3" cols="12">
+  <v-col class="mb-3" cols="12">
     <a v-bind:href="social_link.href" name="display" target="_blank">
       {{ social_link.title }}
     </a>
-  </v-col> -->
+  </v-col>
 </template>
 
 <style>
@@ -30,5 +30,9 @@ a {
 <script>
 export default {
   name: "Anchors",
+    props: {
+    social_link: Object,
+  },
 };
+
 </script>

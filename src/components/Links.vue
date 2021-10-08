@@ -18,14 +18,7 @@
         class="mx-4"
         align="center"
       >
-      <Anchor />
-      <p>{{social_link}}</p>
-
-        <v-col class="mb-3" cols="12">
-          <a v-bind:href="social_link.href" name="display" target="_blank">
-            {{ social_link.title }}
-          </a>
-        </v-col>
+      <Anchor :social_link="social_link" />
 
       </div>
     </v-row>
@@ -68,12 +61,15 @@ img {
 </style>
 
 <script>
-// import Anchor from "./Anchor.vue";
+import Anchor from "./Anchor.vue";
 
 export default {
   name: "Links",
   props: {
     social_links: Object,
   },
+  components: {
+    Anchor,
+  }
 };
 </script>
