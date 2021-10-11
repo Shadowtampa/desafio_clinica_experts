@@ -1,12 +1,14 @@
 <template>
   <v-container align="start">
+    <!-- src="https://avatars.dicebear.com/api/croodles-neutral/luisgomesbcc%40gmail.com.svg" -->
 
     <v-row class="text-center">
       <v-col class="mb-3" cols="1" align="center">
-        <img
-          src="https://avatars.dicebear.com/api/croodles-neutral/luisgomesbcc%40gmail.com.svg"
-          width="200"
-          height="200"
+        <img 
+        v-bind:src= profile_img
+        width="200" 
+        height="200" 
+        v-bind:alt= profile_img
         />
         <h1>Hi There!</h1>
       </v-col>
@@ -17,8 +19,7 @@
         class="mx-4"
         align="center"
       >
-      <Anchor :social_link="social_link" />
-
+        <Anchor :social_link="social_link" />
       </div>
     </v-row>
   </v-container>
@@ -66,9 +67,10 @@ export default {
   name: "Links",
   props: {
     social_links: Object,
+    profile_img: String,
   },
   components: {
     Anchor,
-  }
+  },
 };
 </script>
